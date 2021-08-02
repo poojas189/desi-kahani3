@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Best Story</string>
+    <string name="title_activity_main">Best Story</string>
+    <string name="package_name">com.corlogix.storythree</string>
+    <string name="custom_url_scheme">com.corlogix.storythree</string>
+</resources>

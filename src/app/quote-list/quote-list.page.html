@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{selectedQuotesData?.title || 'Favourite'}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let quote of quoteListArray" class="card-bg-secondary" (click)="popupQuote(quote)">
+      <ion-card-header>
+        <ion-card-title color="danger">
+            <ion-text class="full-quote-text" [innerHTML]="quote">
+            </ion-text>
+        </ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+</ion-content>

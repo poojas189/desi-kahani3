@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>quote-viewer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="image-loader" *ngIf="isLoading">
+    <ion-spinner name="bubbles" color="light"></ion-spinner>
+  </div>
+  <ion-card>
+    <div class="quote-text">
+      <p [innerHTML]="selectedDetailQuote"></p>
+    </div>
+  </ion-card>
+
+</ion-content>
