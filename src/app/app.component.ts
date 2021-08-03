@@ -54,7 +54,7 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.backgroundColorByHexString("#4662a5");
+      this.statusBar.backgroundColorByHexString("#ce5573");
       this.splashScreen.hide();
       this.fetchRouteData();
       this.exipAppSubscription();
@@ -220,7 +220,7 @@ export class AppComponent {
 
   ShareGeneric() {
     this.menuCtrl.toggle();
-    this.socialSharing.share('Download the app Hindi Sexy Story \nFor Android http://play.google.com/store/apps/details?id=com.corlogix.storythree', 'Hindi Sexy Story', null)
+    this.socialSharing.share('Download the app Desi Sexy Story \nFor Android http://play.google.com/store/apps/details?id=com.corlogix.storythree', 'Desi Sexy Story', null)
   }
 
   onMoreApps() {

@@ -60,15 +60,15 @@
 
   .level-content {
     .level-card {
-      background-color: black;
-      height: 160px;
+      background-color: var(--ion-color-primary-tint) !important;
+      height: 200px;
 
       h6 {
-        font-weight: bold;
+        // font-weight: bold;
       }
   
       img {
-        height: 130px;
+        height: 170px;
         width: 100%;
       }
     }

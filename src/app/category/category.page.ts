@@ -11,7 +11,7 @@ import { IonContent } from '@ionic/angular';
 export class CategoryPage implements OnInit, AfterViewInit {
   @ViewChild(IonContent) content: IonContent;
   quotesData: any;
-  isLoading: boolean;
+  isLoading: boolean = true;
 
   constructor(public datahandlerService: DatahandlerService,
     public router: Router) { }
@@ -20,11 +20,11 @@ export class CategoryPage implements OnInit, AfterViewInit {
     this.content.scrollToTop();
   }
 
-  ngOnInit() {
+ async ngOnInit() {
     this.isLoading = true;
     this.datahandlerService._quoteDatabaseSubject.subscribe(data => {
-      this.isLoading = false;
       this.quotesData = data;
+      this.isLoading = false;
     });
   }
 

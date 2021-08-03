@@ -32,6 +32,7 @@ ion-icon {
 
 ion-content {
   background-image: url('./../../assets/images/bg.jpg');
+  background-size: cover;
 }
 
 @media only screen and (max-width: 321px) {
