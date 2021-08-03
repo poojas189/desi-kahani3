@@ -27,14 +27,14 @@ export class AdmobService {
       this.displayAds = this.adConfig.showAds;
 
       this.bannerConfig = {
-        isTesting: true,
+        // isTesting: true,
         autoShow: true,
-        // id: this.adConfig.bannerID
+        id: this.adConfig.bannerID
       };
       this.interstitialConfig = {
-        isTesting: true,
+        // isTesting: true,
         autoShow: false,
-        // id: this.adConfig.interID
+        id: this.adConfig.interID
       }
 
       if (this.displayAds) {
